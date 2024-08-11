@@ -7,7 +7,7 @@
     },
     {
         "Title": "Part 2 Implementation",
-        "Description": "It first starts by locating the element with id:\"blog-list.\" All the posts will appended to that element. The code fetch the data from posts.json; once the data is fetched, each post in the posts array will be iterated. In each iteration, a div element is created, and the data of each post will added to the div element. Then, the div element will be added/appended to the blog page throught blogList.appendChild()."        
+        "Description": "It first starts by locating the element with id:\"blog-list.\" All the posts will appended to that element. The code fetch the data from posts.json; once the data is fetched, each post in the posts array will be iterated. In each iteration, a div element is created, and the data of each post will added to the div element. Then, the div element will be added/appendedgit  to the blog page throught blogList.appendChild()."        
     }
 
 ]

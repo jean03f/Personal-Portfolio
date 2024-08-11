@@ -10,7 +10,6 @@
 
     <Style>
         #projects {
-            /* list-style: disc; */
             padding-left: 10px;
             font-size: 30px;
             padding-top: 60px;
@@ -75,6 +74,7 @@
             text-align: center;
         }
 
+        /* The image of the project will scale up when the user hovers over the project */
         .work:hover img{
             transform: scale(1.1);
         }
@@ -110,7 +110,7 @@
         <h1 style="padding-left: 40px">Projects</h1>
         <br>
         <div class = "work-list">
-
+            <!-- Each project have a link that will redirect the user to the project -->
             <div class="work">
                 <img src="image/database.webp">
                 <div class="layer">
@@ -144,12 +144,15 @@
     </footer>
 
     <script>
+        // The dark/light theme toggle
 
         var icon = document.getElementById("darkThemeButton");
 
         icon.onclick = function(){
+            // It will either add or remove the dark-theme class from the body depending on the current state 
             document.body.classList.toggle("dark-theme");
             if(document.body.classList.contains("dark-theme")){
+                // The image of the button
                 icon.src = "image/sun_icon.png"
             }
             else{

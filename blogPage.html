@@ -31,20 +31,25 @@
         <img src="image/moon_icon.png" id="darkThemeButton">
     </div>
 
+    <!-- Il will store all the blogs from the json file in it-->
     <div id="blog-list">
     </div>
+
     <footer>
         <hr>
         <p>&copy; copyright reserved</p>
     </footer>
 
     <script>
+        // The dark/light theme toggle
 
         var icon = document.getElementById("darkThemeButton");
 
         icon.onclick = function(){
+            // It will either add or remove the dark-theme class from the body depending on the current state 
             document.body.classList.toggle("dark-theme");
             if(document.body.classList.contains("dark-theme")){
+                // The image of the button
                 icon.src = "image/sun_icon.png"
             }
             else{

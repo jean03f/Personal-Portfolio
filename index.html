@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <!-- Header of the page, it redirects to the other pages of the website -->
     <div id="header">
         <h1>Jeanfranco Fung</h1>
         <ul>
@@ -36,6 +37,7 @@
         <img src="image/moon_icon.png" id="darkThemeButton">
     </div>
 
+    <!-- It introduces myself -->
     <div id="homePage">
         <div class="content">
             <p style="font-size: 90px; padding-top: 40px; padding-bottom: 100px;">Welcome to my Portfolio <br> 
@@ -45,18 +47,21 @@
             </div>
     </div>
 
+    <!-- Footer found at the end of the website page -->
     <footer>
         <hr>
         <p>&copy; copyright reserved</p>
     </footer>
 
     <script>
-
+        // The dark/light theme toggle
         var icon = document.getElementById("darkThemeButton");
 
         icon.onclick = function(){
+            // It will either add or remove the dark-theme class from the body depending on the current state 
             document.body.classList.toggle("dark-theme");
             if(document.body.classList.contains("dark-theme")){
+                // The image of the button, obtained from the image folder
                 icon.src = "image/sun_icon.png"
             }
             else{

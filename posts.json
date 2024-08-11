@@ -1,0 +1,13 @@
+[
+
+    {
+        "Title": "Part 1 Implementation",
+        "Description": "A button was created and added to the header of each page. The function of the button is to switch to dark or light theme depending on the current state of the page. Once the button is clicked, it will check whether the body has the class 'dark-theme'. If it does not have it, then it will add it and the appearance of the page will change to dark theme. On the other hand, it its current theme is dark meaning that it has the class 'dark-theme', it will remove the class and it return to white-theme." 
+
+    },
+    {
+        "Title": "Part 2 Implementation",
+        "Description": "It first starts by locating the element with id:\"blog-list.\" All the posts will appended to that element. The code fetch the data from posts.json; once the data is fetched, each post in the posts array will be iterated. In each iteration, a div element is created, and the data of each post will added to the div element. Then, the div element will be added/appended to the blog page throught blogList.appendChild()."        
+    }
+
+]

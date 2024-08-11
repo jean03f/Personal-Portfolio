@@ -15,6 +15,7 @@
         padding-top: 100px;
         padding-left: 30px;
         font-size:30px;
+        color: var(--font-color)
     }
 
     #aboutMe img {
@@ -57,6 +58,8 @@
             <li><a href = "blogPage.html">Blog Page</a></li>
             <li><a href = "contactPage.html">Contact Page</a></li>
         </ul>
+        <img src="image/moon_icon.png" id="darkThemeButton">
+
     </div>
 
 
@@ -81,13 +84,28 @@
     <a href="itec3020_resume.pdf" download class="btn">Download Resume</a>
 
     <div id="resume">
-        <iframe src="itec3020_resume.pdf" height="1000" width="1500">
-        </iframe>
+        <iframe src="itec3020_resume.pdf" height="1000" width="1500"></iframe>
     </div>
 
     <footer style="position: relative">
         <hr>
         <p>&copy; copyright reserved</p>
     </footer>
+
+    <script>
+
+        var icon = document.getElementById("darkThemeButton");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "image/sun_icon.png"
+            }
+            else{
+                icon.src = "image/moon_icon.png"
+            }
+        }
+
+    </script>
 </body>
 </html>
